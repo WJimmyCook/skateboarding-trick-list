@@ -21,8 +21,6 @@ public class SkateTrickDaoImpl implements SkateTrickDao {
     private Map<Integer, Trick> trickMap = new HashMap<>();
     
     private static int trickIdCounter = 0;
-    private static final String SQL_SELECT_TRICK_TYPE_COUNTS
- = "SELECT type, count(*) as num_tricks FROM tricks group by type;";
     
     @Override
     public Trick addTrick(Trick trick) {
